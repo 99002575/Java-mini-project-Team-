@@ -8,7 +8,9 @@ public void getCheckingWithdrawInput(){
     if((checkingBalance-amount)>=0){
       calcCheckingWithdraw(amount);
       System.out.println("New Current Account Balance: " + moneyFormat.format(checkingBalance));
-      }///
+      }else{
+        System.out.println("Balance Cannot be Negative." + "\n");
+        }
     }
 
  
@@ -23,5 +25,7 @@ public void getCheckingWithdrawInput(){
       if((savingBalance-amount)>=0){
         calcSavingWithdraw(amount);
         System.out.println("New saving Account Balance: " + moneyFormat.format(savingBalance));
-        }///
+        }else{
+        System.out.println("Balance Cannot be Negative." + "\n");
+        }
       }
