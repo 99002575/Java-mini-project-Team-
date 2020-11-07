@@ -1,10 +1,42 @@
+
+import java.util.*;
+
+public class Account {
+
+  Scanner input = new Scanner(System.in);
+  DecimalFormat moneyFormat = new DecimalFormat();
+
+  public int setCustomerNumber(int customerNumber){
+    this.customerNumber = customerNumber;
+    return customerNumber;
+  }
+
+  public int getCustomerNumber(){
+    return customerNumber;
+  }
+
+  public int setPinNumber(int pinNumber){
+    this.pinNumber = pinNumber;
+    return pinNumber;
+  }
+
+  public int getPinNumber(){
+    return pinNumber;
+  }
+
+  public double getCheckingBalance(){
+    return checkingBalance;
+  }
+
+  public double getSavingBalance(){
+    return savingBalance;
 public void getCheckingWithdrawInput(){
     System.out.println("Current Account Balance: " + moneyFormat.format(checkingBalance));
     System.out.print("Amount you want to withdraw from Current Account: ");
     double amount =input.nextDouble();
 
  
-
+//withdrawal
     if((checkingBalance-amount)>=0){
       calcCheckingWithdraw(amount);
       System.out.println("New Current Account Balance: " + moneyFormat.format(checkingBalance));
