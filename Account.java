@@ -27,6 +27,18 @@ public class Account {
   public double getCheckingBalance(){
     return checkingBalance;
   }
+  
+  public double calcCheckingWithdraw(double amount){
+    checkingBalance = (checkingBalance - amount);
+    return checkingBalance;
+  }
+
+ 
+
+  public double calcSavingWithdraw(double amount){
+    savingBalance = (savingBalance - amount);
+    return savingBalance;
+  }
 
   public double getSavingBalance(){
     return savingBalance;
