@@ -102,41 +102,7 @@ public class OptionMenu extends Account {
   }
 
 
-  public void getSaving(){
-    System.out.println("Savings Account: ");
-    System.out.println(" Type 1 - View Balance");
-    System.out.println(" Type 2 - Withdraw Funds");
-    System.out.println(" Type 3 - Deposit Funds");
-    System.out.println(" Type 4 - Exit");
-    System.out.print("Choice: ");
-
-    int selection = menuInput.nextInt();
-
-    switch (selection) {
-      case 1:
-      System.out.println("Savings Account Balance: " + moneyFormat.format(getSavingBalance()));
-      getAccountType();
-      break;
-
-      case 2:
-      getsavingWithdrawInput();
-      getAccountType();
-      break;
-
-      case 3:
-      getSavingDepositInput();
-      getAccountType();
-      break;
-
-      case 4:
-      System.out.println("Thank You for using this ATM project, bye....");
-      break;
-
-      default:
-      System.out.println("\n" + "Invalid Choice..." + "\n");
-      getChecking();
-    }
-  }
+ ///////
 
 }
 
